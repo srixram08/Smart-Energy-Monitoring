@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚡ Smart Energy AI</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>⚡ FUSION AI</h2>
+
+  <ul>
+    <li class="active"><i class="fas fa-chart-line"></i> Dashboard</li>
+    <li><i class="fas fa-rupee-sign"></i> Cost</li>
+    <li><i class="fas fa-plug"></i> Devices</li>
+    <li><i class="fas fa-building"></i> Rooms</li>
+  </ul>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Energy Dashboard</h1>
+
+    <div class="filters">
+      <button class="active">Today</button>
+      <button>Month</button>
+      <button>Year</button>
+    </div>
+
+    <span id="date"></span>
+  </div>
+
+  <!-- Grid -->
+  <div class="grid">
+
+    <div class="card">
+      <h3>💰 Cost Overview</h3>
+      <canvas id="donutChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>📊 Power Trend</h3>
+      <canvas id="barChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Live Energy</h3>
+      <canvas id="lineChart"></canvas>
+    </div>
+
+    <div class="card status-card">
+      <h3>🔌 System Status</h3>
+      <p id="status">--</p>
+      <p id="power">--</p>
+      <p id="occupancy">--</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
